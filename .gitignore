@@ -1,0 +1,17 @@
+node_modules/
+.next/
+dist/
+build/
+.env
+.env.local
+.env.*.local
+*.log
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+public/images/*.jpg
+public/images/*.jpeg
+public/images/*.png
+public/images/*.gif

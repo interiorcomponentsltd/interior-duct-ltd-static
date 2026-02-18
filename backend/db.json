@@ -1,0 +1,177 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Luxury Sofa Set",
+      "price": 450000,
+      "category": "Living Room",
+      "description": "Comfortable and stylish sofa set perfect for modern living rooms",
+      "images": [
+        "/images/Living Room set.jpg"
+      ],
+      "material": "Fabric",
+      "color": "Gray",
+      "inStock": true,
+      "rating": 4.8,
+      "reviews": 24
+    },
+    {
+      "id": "2",
+      "name": "Dining Chair Set",
+      "price": 180000,
+      "category": "Dining",
+      "description": "Elegant dining chairs with premium upholstery",
+      "images": [
+        "/images/Chair dining top.jpg",
+        "/images/Chair Dinings.jpg"
+      ],
+      "material": "Wood & Fabric",
+      "color": "Brown",
+      "inStock": true,
+      "rating": 4.7,
+      "reviews": 18
+    },
+    {
+      "id": "3",
+      "name": "Bedside Table",
+      "price": 65000,
+      "category": "Bedroom",
+      "description": "Modern bedside table with storage",
+      "images": [
+        "/images/Bedside.jpeg"
+      ],
+      "material": "Wood",
+      "color": "Mahogany",
+      "inStock": true,
+      "rating": 4.6,
+      "reviews": 12
+    },
+    {
+      "id": "4",
+      "name": "TV Console",
+      "price": 280000,
+      "category": "Living Room",
+      "description": "Sleek TV console with ample storage space",
+      "images": [
+        "/images/tv console1.jpg",
+        "/images/tv console2.jpg",
+        "/images/tvconsole3.jpg"
+      ],
+      "material": "Wood",
+      "color": "White",
+      "inStock": true,
+      "rating": 4.9,
+      "reviews": 32
+    },
+    {
+      "id": "5",
+      "name": "Kitchen Cabinet",
+      "price": 350000,
+      "category": "Kitchen",
+      "description": "Premium kitchen cabinet with modern design",
+      "images": [
+        "/images/Kitchen Cabinet.jpg",
+        "/images/Red Kitchen Cab.jpg"
+      ],
+      "material": "MDF & Wood",
+      "color": "Red/White",
+      "inStock": true,
+      "rating": 4.7,
+      "reviews": 15
+    },
+    {
+      "id": "6",
+      "name": "Dining Set",
+      "price": 520000,
+      "category": "Dining",
+      "description": "Complete dining set with table and chairs",
+      "images": [
+        "/images/Dining Set.jpg",
+        "/images/Dining Sets.jpg"
+      ],
+      "material": "Wood",
+      "color": "Brown",
+      "inStock": true,
+      "rating": 4.8,
+      "reviews": 28
+    },
+    {
+      "id": "7",
+      "name": "Bar Stool",
+      "price": 45000,
+      "category": "Kitchen",
+      "description": "Premium bar stool with comfortable seating",
+      "images": [
+        "/images/Bar Stool.jpg"
+      ],
+      "material": "Wood & Metal",
+      "color": "Black",
+      "inStock": true,
+      "rating": 4.5,
+      "reviews": 8
+    },
+    {
+      "id": "8",
+      "name": "Coffee Table",
+      "price": 95000,
+      "category": "Living Room",
+      "description": "Elegant glass coffee table for modern interiors",
+      "images": [
+        "/images/Table glass round - Copy.jpg",
+        "/images/Table coffee low.jpg"
+      ],
+      "material": "Glass & Wood",
+      "color": "Brown",
+      "inStock": true,
+      "rating": 4.6,
+      "reviews": 11
+    }
+  ],
+  "quotes": [
+    {
+      "id": "1",
+      "text": "Always ask for referrals",
+      "author": "Sales Excellence"
+    },
+    {
+      "id": "2",
+      "text": "Identify strongest motivator early",
+      "author": "Sales Technique"
+    },
+    {
+      "id": "3",
+      "text": "Review pipeline objectively",
+      "author": "Business Management"
+    },
+    {
+      "id": "4",
+      "text": "Know your product inside and out",
+      "author": "Professional Development"
+    },
+    {
+      "id": "5",
+      "text": "Build a bridge with your customer",
+      "author": "Customer Relations"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "1",
+      "name": "Chioma Adeyemi",
+      "text": "Exceptional quality and craftsmanship. My living room looks amazing!",
+      "rating": 5
+    },
+    {
+      "id": "2",
+      "name": "Uche Okonkwo",
+      "text": "Professional service and timely delivery. Highly recommended!",
+      "rating": 5
+    },
+    {
+      "id": "3",
+      "name": "Amaka Nwosu",
+      "text": "Beautiful furniture that transforms spaces. Love my dining set!",
+      "rating": 5
+    }
+  ]
+}

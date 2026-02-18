@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: interiorductltd
+    env: node
+    plan: free
+    branch: main
+    buildCommand: |
+      cd frontend && npm ci && npm run build
+    startCommand: |
+      cd backend && npm ci && node server.js
+    repo: https://github.com/barthtech004/interiorductltd
+    envVars: []
