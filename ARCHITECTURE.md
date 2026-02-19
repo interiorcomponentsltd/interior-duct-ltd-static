@@ -167,7 +167,7 @@ App (_app.js)
 
 ---
 
-## 🔄 Data Flow Diagram
+## Data Flow Diagram
 
 ### Product Browsing Flow
 ```
@@ -232,7 +232,7 @@ Allow user to click product
 
 ---
 
-## 📊 Request/Response Examples
+## Request/Response Examples
 
 ### GET /products
 ```
@@ -291,7 +291,7 @@ Response:
 
 ---
 
-## 🔐 Security Architecture
+## Security Architecture
 
 ```
 ┌─────────────────────────────────────┐
@@ -324,7 +324,7 @@ Response:
 
 ---
 
-## 🚀 Deployment Architecture
+## Deployment Architecture
 
 ### Current (Local)
 ```
@@ -341,7 +341,7 @@ https://interiorductltd.com  https://api.interiorductltd.com
 
 ---
 
-## 📈 Performance Optimization
+## Performance Optimization
 
 ```
 Frontend (Next.js)
@@ -366,7 +366,7 @@ Browser
 
 ---
 
-## 🔧 Configuration Files
+## Configuration Files
 
 ### package.json
 - Defines dependencies
@@ -390,7 +390,7 @@ Browser
 
 ---
 
-## 🎯 Integration Points
+## Integration Points
 
 ```
 Frontend      ←→    Backend     ←→    Database
@@ -406,4 +406,4 @@ Frontend      ←→    Backend     ←→    Database
 
 **Architecture Version**: 1.0.0  
 **Last Updated**: February 2026  
-**Status**: Production Ready ✅
+**Status**: Production Ready

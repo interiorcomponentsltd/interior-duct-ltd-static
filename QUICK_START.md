@@ -1,6 +1,6 @@
 # QUICK REFERENCE GUIDE
 
-## 🚀 LAUNCH THE WEBSITE (3 COMMANDS)
+## LAUNCH THE WEBSITE (3 COMMANDS)
 
 ```bash
 # Terminal 1
@@ -18,7 +18,7 @@ npm run dev          # Start frontend
 
 ---
 
-## 📖 KEY PAGES
+## KEY PAGES
 
 | Page | URL | What It Does |
 |------|-----|--------------|
@@ -31,7 +31,7 @@ npm run dev          # Start frontend
 
 ---
 
-## 🛠 FILE LOCATIONS & PURPOSES
+## FILE LOCATIONS & PURPOSES
 
 ### Core Functionality
 | File | Purpose |
@@ -61,7 +61,7 @@ npm run dev          # Start frontend
 
 ---
 
-## 🎯 COMMON TASKS
+## COMMON TASKS
 
 ### Add a New Product
 1. Go to http://localhost:3000/admin
@@ -98,7 +98,7 @@ npm run dev          # Start frontend
 
 ---
 
-## 🔌 API ENDPOINTS
+## API ENDPOINTS
 
 ### Products
 ```
@@ -127,7 +127,7 @@ GET  /health            → Check if backend is running
 
 ---
 
-## 💾 DATABASE STRUCTURE
+## DATABASE STRUCTURE
 
 ### db.json
 ```json
@@ -159,7 +159,7 @@ GET  /health            → Check if backend is running
 
 ---
 
-## 🎨 CUSTOMIZATION QUICK LINKS
+## CUSTOMIZATION QUICK LINKS
 
 ### Colors
 - Primary: `#1f2937` (gray-900)
@@ -179,7 +179,7 @@ GET  /health            → Check if backend is running
 
 ---
 
-## 🚨 TROUBLESHOOTING
+## TROUBLESHOOTING
 
 ### Website won't load
 1. Is backend running? Check terminal
@@ -208,7 +208,7 @@ GET  /health            → Check if backend is running
 
 ---
 
-## 📱 RESPONSIVE BREAKPOINTS
+## RESPONSIVE BREAKPOINTS
 
 - **Mobile**: Under 768px (phones)
 - **Tablet**: 768px - 1024px (tablets)
@@ -218,7 +218,7 @@ All pages auto-respond to screen size.
 
 ---
 
-## 🔐 ADMIN FEATURES
+## ADMIN FEATURES
 
 ### Current
 - No login needed (development)
@@ -235,7 +235,7 @@ Add:
 
 ---
 
-## 📊 PERFORMANCE TIPS
+## PERFORMANCE TIPS
 
 1. **Images**: Already optimized by Next.js
 2. **CSS**: Tailwind automatically minifies
@@ -245,7 +245,7 @@ Add:
 
 ---
 
-## 🌐 DEPLOYMENT
+## DEPLOYMENT
 
 ### Frontend (Vercel - Free)
 ```bash
@@ -266,7 +266,7 @@ NEXT_PUBLIC_API_URL=https://your-backend.render.com
 
 ---
 
-## 📚 IMPORTANT FILES TO KNOW
+## IMPORTANT FILES TO KNOW
 
 ### Must Keep
 - `package.json` - All dependencies
@@ -285,7 +285,7 @@ NEXT_PUBLIC_API_URL=https://your-backend.render.com
 
 ---
 
-## 🎓 TECH STACK AT A GLANCE
+## TECH STACK AT A GLANCE
 
 ```
 ┌─────────────────────────────────────────┐
@@ -318,7 +318,7 @@ NEXT_PUBLIC_API_URL=https://your-backend.render.com
 
 ---
 
-## ✨ FEATURES SHOWCASE
+## FEATURES SHOWCASE
 
 ### What Makes It Special
 
@@ -335,7 +335,7 @@ NEXT_PUBLIC_API_URL=https://your-backend.render.com
 
 ---
 
-## 🆘 GET HELP
+## GET HELP
 
 ### Documentation
 - `README.md` - Full feature list
@@ -353,7 +353,7 @@ NEXT_PUBLIC_API_URL=https://your-backend.render.com
 
 ---
 
-## 📝 CHEAT SHEET
+## CHEAT SHEET
 
 ```bash
 # START
@@ -378,5 +378,5 @@ npm run                 # Show all scripts
 
 **Version**: 1.0.0  
 **Built**: February 2026  
-**Status**: Ready to Use ✅  
+**Status**: Ready to Use   
 **Questions?** Check the README or PROJECT_SUMMARY

@@ -1,12 +1,12 @@
 # ENHANCED ADMIN DASHBOARD
 
-## 🎨 Creating a Production-Ready Admin Dashboard
+## Creating a Production-Ready Admin Dashboard
 
 This replaces the basic `/admin` page with a full-featured dashboard for managing products, leads, quotes, and files.
 
 ---
 
-## 📁 ADMIN FOLDER STRUCTURE
+## ADMIN FOLDER STRUCTURE
 
 Create this structure under `frontend/pages/admin/`:
 
@@ -26,7 +26,7 @@ frontend/pages/admin/
 
 ---
 
-## 📌 FILE 1: `frontend/pages/admin/index.js`
+## FILE 1: `frontend/pages/admin/index.js`
 
 **Dashboard Home with Stats & Recent Activity**
 
@@ -169,7 +169,7 @@ export default function AdminDashboard() {
 
 ---
 
-## 📌 FILE 2: `frontend/pages/admin/components/AdminNav.js`
+## FILE 2: `frontend/pages/admin/components/AdminNav.js`
 
 **Sidebar Navigation Component**
 
@@ -220,7 +220,7 @@ export default function AdminNav() {
 
 ---
 
-## 📌 FILE 3: `frontend/pages/admin/components/StatCard.js`
+## FILE 3: `frontend/pages/admin/components/StatCard.js`
 
 ```jsx
 import Link from "next/link";
@@ -244,7 +244,7 @@ export default function StatCard({ title, value, icon, href }) {
 
 ---
 
-## 📌 FILE 4: `frontend/pages/admin/products.js`
+## FILE 4: `frontend/pages/admin/products.js`
 
 **Product Management with Upload**
 
@@ -484,7 +484,7 @@ export default function AdminProducts() {
 
 ---
 
-## 📌 FILE 5: `frontend/pages/admin/components/UploadForm.js`
+## FILE 5: `frontend/pages/admin/components/UploadForm.js`
 
 **Reusable File Upload Component**
 
@@ -566,7 +566,7 @@ export default function UploadForm({ onUpload }) {
 
 ---
 
-## 📌 FILE 6: `frontend/pages/admin/leads.js`
+## FILE 6: `frontend/pages/admin/leads.js`
 
 **CRM Leads Management**
 
@@ -725,7 +725,7 @@ export default function AdminLeads() {
 
 ---
 
-## 📌 FILE 7: `frontend/pages/admin/quotes.js`
+## FILE 7: `frontend/pages/admin/quotes.js`
 
 **Quote Management**
 
@@ -940,7 +940,7 @@ export default function AdminQuotes() {
 
 ---
 
-## 📌 FILE 8: `frontend/pages/admin/settings.js`
+## FILE 8: `frontend/pages/admin/settings.js`
 
 **Settings Page**
 
@@ -1010,7 +1010,7 @@ export default function AdminSettings() {
 
 ---
 
-## ✅ SETUP COMPLETE
+## SETUP COMPLETE
 
 Run these commands:
 
@@ -1026,18 +1026,18 @@ Then visit: **http://localhost:3000/admin**
 
 ---
 
-## 🎯 ADMIN FEATURES READY
+## ADMIN FEATURES READY
 
-✅ Dashboard with stats  
-✅ Product management with file upload  
-✅ CRM leads tracking  
-✅ Quote management  
-✅ Settings page  
-✅ Sidebar navigation  
-✅ Responsive design  
+Dashboard with stats  
+Product management with file upload  
+CRM leads tracking  
+Quote management  
+Settings page  
+Sidebar navigation  
+Responsive design  
 
 ---
 
-## 📄 NEXT: AWS Deployment Guide
+## NEXT: AWS Deployment Guide
 
 Read: **AWS_DEPLOYMENT.md**

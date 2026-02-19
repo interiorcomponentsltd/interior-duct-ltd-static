@@ -1,10 +1,10 @@
-# 🐙 GITHUB SETUP & DEPLOYMENT GUIDE
+# GITHUB SETUP & DEPLOYMENT GUIDE
 
 **Set up GitHub repository and automated deployment for Interior Duct Ltd**
 
 ---
 
-## 📋 PREREQUISITES
+## PREREQUISITES
 
 - GitHub account (free)
 - Git installed locally
@@ -12,7 +12,7 @@
 
 ---
 
-## 🎯 STEP 1: CREATE GITHUB REPOSITORY
+## STEP 1: CREATE GITHUB REPOSITORY
 
 ### 1.1 Go to GitHub
 
@@ -37,7 +37,7 @@ https://github.com/YOUR_USERNAME/interior-duct-ltd.git
 
 ---
 
-## 🚀 STEP 2: PUSH LOCAL CODE TO GITHUB
+## STEP 2: PUSH LOCAL CODE TO GITHUB
 
 ### 2.1 Initialize Git (if not already done)
 

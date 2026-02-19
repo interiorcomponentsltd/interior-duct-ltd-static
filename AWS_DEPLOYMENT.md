@@ -1,10 +1,10 @@
-# 🚀 AWS LIGHTSAIL DEPLOYMENT GUIDE
+# AWS LIGHTSAIL DEPLOYMENT GUIDE
 
 **Deploy Interior Duct Ltd to production for $5/month**
 
 ---
 
-## 💰 PRICING BREAKDOWN
+## PRICING BREAKDOWN
 
 | Component | Cost | Notes |
 |-----------|------|-------|
@@ -16,17 +16,17 @@
 
 ---
 
-## 📋 PREREQUISITES
+## PREREQUISITES
 
-- ✅ AWS Account (free tier eligible)
-- ✅ Local Next.js + Express project working
-- ✅ Git repository on GitHub
-- ✅ Domain name (optional, can use IP)
-- ✅ SSH client (Windows: PuTTY or built-in)
+- AWS Account (free tier eligible)
+- Local Next.js + Express project working
+- Git repository on GitHub
+- Domain name (optional, can use IP)
+- SSH client (Windows: PuTTY or built-in)
 
 ---
 
-## 🎯 STEP 1: PREPARE YOUR PROJECT
+## STEP 1: PREPARE YOUR PROJECT
 
 ### 1.1 Update `package.json`
 
@@ -137,7 +137,7 @@ CMD ["pm2-runtime", "start", "ecosystem.config.js"]
 
 ### 2.2 Configure Instance
 
-| Setting | Value |
+| Setting | Value | 
 |---------|-------|
 | **Location** | Choose nearest region |
 | **Image** | Ubuntu 22.04 LTS |
@@ -195,7 +195,7 @@ ssh -i lightsail.pem ubuntu@YOUR_STATIC_IP
 
 ---
 
-## 📦 STEP 4: INSTALL DEPENDENCIES
+## STEP 4: INSTALL DEPENDENCIES
 
 Once connected via SSH, run:
 
