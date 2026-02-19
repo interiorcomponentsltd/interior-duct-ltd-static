@@ -12,25 +12,59 @@
         * {
             transition: all 0.3s ease-in-out;
         }
-        .product-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        
+        /* Enhanced Typography */
+        h1, h2, h3, h4 {
+            letter-spacing: -0.5px;
         }
+        
+        /* Product Card Enhancements */
+        .product-card {
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .product-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15), 0 0 30px rgba(217, 119, 6, 0.1);
+            border-color: #d97706;
+        }
+        
+        /* Animations */
         @keyframes slideIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        .animate-slideIn {
-            animation: slideIn 0.6s ease-out;
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        .animate-slideIn {
+            animation: slideIn 0.8s ease-out;
+        }
+        
+        /* Enhanced Hero Section */
         .hero-image {
-            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+            background: linear-gradient(135deg, #f5d547 0%, #ffd966 25%, #f4c430 50%, #e8b923 75%, #daa520 100%);
+            background-size: 400% 400%;
             min-height: 500px;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
+            overflow: hidden;
+            animation: gradient-shift 15s ease infinite;
         }
+        
+        @keyframes gradient-shift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
         .hero-image::before {
             content: '';
             position: absolute;
@@ -38,9 +72,101 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="1200" height="600" fill="rgba(31,41,55,1)"/><rect width="1200" height="600" fill="url(%23grid)"/></svg>');
-            opacity: 0.5;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="dots" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.15)"/></pattern><linearGradient id="fade" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%%" style="stop-color:rgba(0,0,0,0);stop-opacity:1" /><stop offset="100%%" style="stop-color:rgba(0,0,0,0.2);stop-opacity:1" /></linearGradient></defs><rect width="1200" height="600" fill="url(%23dots)"/><rect width="1200" height="600" fill="url(%23fade)"/></svg>');
+            opacity: 0.6;
+            z-index: 1;
         }
+        
+        .hero-image::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 0;
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) translateX(0px); }
+            50% { transform: translateY(-30px) translateX(20px); }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 3xl;
+            padding: 2rem;
+        }
+        
+        .hero-content h1 {
+            color: #1a1a1a;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+            font-weight: 800;
+            letter-spacing: -2px;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+        
+        .hero-content p {
+            color: #333333;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .hero-btn {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .hero-btn-primary {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            color: white;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .hero-btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(255, 107, 53, 0.4);
+            background: linear-gradient(135deg, #ff7a4d 0%, #f8a535 100%);
+        }
+        
+        .hero-btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .hero-btn-secondary:hover {
+            background: white;
+            color: #b8860b;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(255, 255, 255, 0.3);
+        }
+        
         .image-placeholder {
             width: 100%;
             height: 100%;
@@ -50,6 +176,16 @@
             justify-content: center;
             font-size: 48px;
             color: #9ca3af;
+        }
+        
+        /* Buttons Global Enhancement */
+        button, a[class*="bg-"] {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        /* Section Styling */
+        section {
+            scroll-margin-top: 5rem;
         }
     </style>
 </head>
@@ -79,13 +215,12 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero-image relative">
-        <div class="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
-        <div class="relative z-10 text-center text-white max-w-2xl px-4">
-            <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-slideIn">Premium Furniture Collections</h1>
-            <p class="text-xl md:text-2xl mb-8 text-gray-200">Crafted with Excellence</p>
-            <div class="flex justify-center gap-4 flex-wrap">
-                <a href="#shop" class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-lg font-semibold transition">Shop Now</a>
-                <a href="#contact" class="bg-transparent hover:bg-white hover:text-black border-2 border-white text-white px-8 py-3 rounded-lg font-semibold transition">Contact Us</a>
+        <div class="hero-content animate-slideIn">
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-4">Premium Furniture Collections</h1>
+            <p class="text-xl md:text-2xl mb-8">Crafted with Excellence & Precision</p>
+            <div class="hero-buttons">
+                <a href="#shop" class="hero-btn hero-btn-primary">Shop Now</a>
+                <a href="#contact" class="hero-btn hero-btn-secondary">Contact Us</a>
             </div>
         </div>
     </section>
