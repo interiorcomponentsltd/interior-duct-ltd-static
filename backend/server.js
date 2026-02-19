@@ -27,6 +27,15 @@ const uploadsDir = path.join(__dirname, 'uploads');
 if (!fs.existsSync(uploadsDir)) fs.mkdirSync(uploadsDir, { recursive: true });
 app.use('/uploads', express.static(uploadsDir));
 
+// Serve static demo (project root) so the static `index.html` and branding images are accessible
+const siteRoot = path.join(__dirname, '..');
+app.use(express.static(siteRoot));
+
+// Serve index.html at root for convenience
+app.get('/', (req, res) => {
+  res.sendFile(path.join(siteRoot, 'index.html'));
+});
+
 // Multer configuration
 const storage = multer.diskStorage({
   destination: (req, file, cb) => cb(null, uploadsDir),
