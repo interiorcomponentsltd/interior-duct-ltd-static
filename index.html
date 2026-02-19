@@ -331,10 +331,14 @@
                 const col = document.createElement('div');
                 col.className = 'bg-white rounded-lg shadow-md overflow-hidden product-card cursor-pointer group';
                 const imgSrc = encodePath(prod.images[0]);
-                col.innerHTML = `
-                    <div class="relative bg-gray-100 overflow-hidden h-72">
-                        <img src="${imgSrc}" alt="${prod.name}" class="w-full h-full object-cover">
-                    </div>
+                const imgWebp = imgSrc.replace(/\.[^.]+$/, '.webp');
+                    col.innerHTML = `
+                        <div class="relative bg-gray-100 overflow-hidden h-72">
+                            <picture>
+                                <source srcset="${imgWebp}" type="image/webp">
+                                <img src="${imgSrc}" alt="${prod.name}" class="w-full h-full object-cover">
+                            </picture>
+                        </div>
                     <div class="p-4">
                         <h3 class="text-lg font-semibold text-gray-900 mb-2">${prod.name}</h3>
                         <div class="flex items-center mb-2">
@@ -448,10 +452,18 @@
             const imgs = modal.querySelector('#modalImages');
             imgs.innerHTML = '';
             prod.images.forEach(src => {
+                const enc = encodePath(src);
+                const webp = enc.replace(/\.[^.]+$/, '.webp');
+                const picture = document.createElement('picture');
+                const source = document.createElement('source');
+                source.srcset = webp;
+                source.type = 'image/webp';
                 const img = document.createElement('img');
-                img.src = encodePath(src);
+                img.src = enc;
                 img.className = 'w-full h-64 object-cover rounded';
-                imgs.appendChild(img);
+                picture.appendChild(source);
+                picture.appendChild(img);
+                imgs.appendChild(picture);
             });
             modal.classList.remove('hidden');
             document.getElementById('modalAdd').onclick = () => {
